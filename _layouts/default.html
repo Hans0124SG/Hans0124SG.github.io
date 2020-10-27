@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+{% seo %}
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<html>
+  <head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page.title }}</title>
+  </head>
+  <body>
+  	<div id="header" class="container-fluid module">
+  	<div class="row">
+
+    <div class="col-8">
+     <span id="name">WANG Han</span> <br />
+     <span id="title">PhD student in <a href="https://sph.nus.edu.sg/">Saw Swee Hock School of Public Health</a></span><br/>
+     <span id="title">Organizing chair of <a href="https://www.nus-datathon.com/robotics-innovation-challenge">Robotics Innovation Challenge (RIC)</a></span><br/>
+     <span id="title"><a href="http://www.nus.edu.sg/">National University of Singapore (NUS)</a></span><br/>
+     <span id="title"><b>Specialized in Healthcare data analytics with AI</b></span><br/>
+     <span id="title">Supervised by <a href="https://www.mornin-feng.com/">Prof. Feng Mengling</a></span><br/>
+     <span id="title"><i>My Email: ephwha at nus.edu.sg</i></span>
+     </div>
+
+    <div class="col-4">
+    <img class="img-fluid" src="assets/profile_pic.jpg">
+    </div>
+
+ </div>
+    <br id='ph'/>
+        <ul class="jump-bar">
+  <li><a href="/#research">Research</a></li>
+    <li class="middot">&middot;</li>
+  <li><a href="/#datathon">Datathon</a></li>
+    <li class="middot">&middot;</li>
+  <li><a href="/#education">Education</a></li>
+    <li class="middot">&middot;</li>
+  <li><a href="/#collaborators">Collaborators</a></li>
+    <li class="middot">&middot;</li>
+  <li><a href="/#papers">Papers</a></li>
+      <li class="middot">&middot;</li>
+  <li><a href="/blog">Blogs</a></li>
+  
+  <!-- <li class="middot">&middot;</li> -->
+  <!-- <li><a href="#blog">Blog</a></li> -->
+  </ul>
+  
+   <hr/>
+    {{ content }}
+	</div>
+  </body>
+</html>

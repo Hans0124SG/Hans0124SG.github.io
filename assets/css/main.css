@@ -1,0 +1,109 @@
+body {
+  background-color: #dddddd ;
+  padding: 20px; 
+  font-family: Georgia ;
+  color: #333333 ;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+div.module {
+  width: 730px ;
+  background: white ;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-bottom: 20px ;
+  padding: 20px ;
+  padding-left: 40px ;
+  padding-right: 40px ;
+  border-radius: 9px ;
+  -moz-border-radius: 9px ;
+  -o-box-shadow: 0 5px 5px #333333 ;
+  -webkit-box-shadow: 0 5px 5px #333333 ;
+  -moz-box-shadow: 0 5px 5px #333333 ;
+  box-shadow: 0 5px 5px #333333 ;
+}
+
+li {
+  margin-top: 0.3em;
+  margin-bottom: 1em; 
+}
+
+a {
+  text-decoration: none ;
+}
+
+div#header {
+  width: 700px;
+/*  height: 200px ;
+*/}
+
+div#name-area {
+  float: left; 
+}
+
+span#name {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+span#title {
+  font-size: 14px;
+}
+
+span#paper {
+  font-size: 16px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+span#author {
+  font-size: 12px;
+}
+
+p#intro {
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+p#datathon {
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+br#ph {
+  line-height:10px;
+}
+
+ul.jump-bar {
+ text-align:center;
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;;
+ margin-right: 0px;;
+ padding-left: 0px ;
+ padding-right: 0px ;
+}
+
+
+ul.jump-bar li {
+ display: inline ;
+ font-weight: bold ;
+}
+
+ul.research li {
+ margin-top: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px;;
+ margin-right: 0px;;
+ padding-left: 0px ;
+ padding-right: 0px ;
+}
