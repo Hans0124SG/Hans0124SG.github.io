@@ -1,18 +1,4 @@
-// comment styles from
-// https://github.com/willymcallister/willymcallister.github.io/blob/fbc7f396fbe80186b1abc63e436ec509190c1b3a/assets/main.scss
-
-$base-font-size:    18px !default;
-$comment-font-size: 17px !default;
-
-
-//
-// Staticman new comment form
-//
 input, select, textarea, label, button {
-//    @extend body;
-    font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-    color: $text-color;
-    background-color: $background-color;
     -webkit-text-size-adjust: 100%;
     -webkit-font-feature-settings: "kern" 1;
         -moz-font-feature-settings: "kern" 1;
@@ -26,14 +12,11 @@ fieldset {
     padding: 0;
 }
 
-// each staticman text field is wrapped in this div
 .textfield {
     max-width: 100%;
     padding: 0.5rem 0;
 }
 
-// fields except the comment field get this class too
-// to keep them a reasonable size
 .narrowfield {
     width: 420px;
 }
@@ -110,9 +93,6 @@ button:hover {
     cursor: pointer;
 }
 
-//
-// Pop-up modal window for Staticman comments
-//
 .show-modal {
     overflow: hidden;
     position: relative;
