@@ -19,6 +19,6 @@ Welcome to my blog! In my blog, I will be sharing my thoughts and experiences su
 
 If you would like to subscribe to my posts, please join my mailing list at the bottom of the page, and you get an email whenever I post new blogs.
 
-_In my next post, I will be sharing the variable resources that I used to build this website._
+In my next post, I will be sharing the variable resources that I used to build this website.
 
 Enjoy reading :)
