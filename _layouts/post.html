@@ -28,6 +28,8 @@ comments: true
 </form>
 </div>
 
+<hr/>
+
 <!--End mc_embed_signup-->
 <div id="disqus_thread"></div>
 <script>
@@ -37,8 +39,8 @@ comments: true
      */
     
     var disqus_config = function () {
-        this.page.url = {{ site.url }}{{ page.url }};  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = {{ page.url }}; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = '{{ page.url | absolute_url }}';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '{{ page.url | absolute_url }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     
     (function() {  // DON'T EDIT BELOW THIS LINE
