@@ -18,6 +18,6 @@ Welcome to my blog! In my blog, I will be sharing my thoughts and experiences su
 - Quantitative Trading
 - Life hacks and anything I find interesting
 
-If you would like to subscribe to my posts, please join my mailing list here and you get an email whenever I post new blogs.
+If you would like to subscribe to my posts, please join my mailing list at the bottom of the page, and you get an email whenever I post new blogs.
 
 Enjoy reading :)
