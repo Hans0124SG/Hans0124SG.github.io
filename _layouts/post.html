@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <h2>{{ page.title }}</h2>
 <p>{{ page.date | date_to_string }} - {{ page.categories }}</p>
@@ -18,7 +19,7 @@ layout: default
 <div id="mc_embed_signup">
 <form action="https://github.us2.list-manage.com/subscribe/post?u=45f71669c4637c7ddf9697168&amp;id=740a3c193b" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe</label>
+	<label for="mce-EMAIL">Subscribe to my blog here:</label>
 	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
     <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_45f71669c4637c7ddf9697168_740a3c193b" tabindex="-1" value=""></div>
@@ -28,3 +29,9 @@ layout: default
 </div>
 
 <!--End mc_embed_signup-->
+
+<hr/>
+
+{% if page.comments == true %}
+  {% include comments.html %}
+{% endif %}

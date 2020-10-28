@@ -35,6 +35,11 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+staticman_url: https://staticman-wh.herokuapp.com/v2/entry/Hans0124SG/Hans0124SG/master/comments
+reCaptcha:
+  siteKey: 6LeCStwZAAAAAFMLEa2skZdp-0Gz8tGHdwHx21jz
+  secret: 6LeCStwZAAAAAMapeXEonGY7lWMSezdEPQV-8eYG
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
