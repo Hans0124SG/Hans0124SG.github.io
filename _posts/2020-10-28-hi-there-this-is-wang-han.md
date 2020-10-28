@@ -1,8 +1,8 @@
 ---
 layout: post
 title: Hi there! This is Wang Han.
-date: '2020-10-28 00:00:00 +0800'
-categories: Intro
+date: '2020-10-28 12:00:00 +0800'
+categories: Misc
 published: true
 ---
 Welcome to my blog! In my blog, I will be sharing my thoughts and experiences surrounding the following topics but not limitted to:
