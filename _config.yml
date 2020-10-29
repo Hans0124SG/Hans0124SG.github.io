@@ -34,6 +34,7 @@ url: https://hans0124sg.github.io # the base hostname & protocol for your site, 
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
