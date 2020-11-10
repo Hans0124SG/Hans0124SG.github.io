@@ -14,7 +14,7 @@ source "https://rubygems.org"
 # uncomment the line below. To upgrade, run `bundle update github-page
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "github-pages", 
+  gem "github-pages"
   gem 'jekyll-sitemap'
   gem 'jekyll-seo-tag'
   gem 'jekyll-feed'
