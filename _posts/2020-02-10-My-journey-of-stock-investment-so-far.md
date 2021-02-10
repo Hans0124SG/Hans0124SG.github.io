@@ -8,10 +8,6 @@ published: true
 
 <style>body {text-align: justify}</style>
 
-*My journey of stock investment so far*
-
-------
-
 On the night before the Chinese New Year eve, I would like to look back and do a summary on my journey of stock investment. This is to remind myself of the rights and wrongs along the journey, and to share with my audience some tips in investment.
 
 Disclaimer: This article is not intended as, and shall not be understood or construed as, any financial advice. 
