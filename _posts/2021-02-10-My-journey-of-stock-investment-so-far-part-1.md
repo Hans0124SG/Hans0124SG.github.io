@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My journey of stock investment so far - Part 1
-date: '2020-02-10 12:00:00 +0800'
+date: '2021-02-10 12:00:00 +0800'
 categories: Investment
 published: true
 ---
