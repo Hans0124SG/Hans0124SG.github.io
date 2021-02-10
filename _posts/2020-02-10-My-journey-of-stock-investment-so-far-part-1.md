@@ -14,7 +14,7 @@ Disclaimer: This article is not intended as, and shall not be understood or cons
 
 Results:  ~100% [Money Weighted Return](https://www.investopedia.com/terms/m/money-weighted-return.asp) (MWR) over 1 year and 3 months.
 
-<center><img src="/assets/PnL.png" style="zoom:50%;" /></center>
+<center><img src="/assets/PnL.png" style="max-width: 100%;" /></center>
 
 I would like to divide my journey into 4 periods:
 
@@ -27,7 +27,7 @@ I would like to divide my journey into 4 periods:
 
 When I just started investing, I was a complete newbie. I bought stocks based on trends, based on news, based on my own beliefs, based on anything but valuation of the company.
 
-<center><img src="/assets/FirstPeriodStocks.png" style="zoom:50%;" /></center>
+<center><img src="/assets/FirstPeriodStocks.png" style="max-width: 100%;" /></center>
 
 Luckily, some of the companies I bought (e.g. 2400.HK, BILI and CRM) performed well and gave me the initial confidence in continuing stock investing. However, one bomb was planted in my porfolio and exploded later.
 
