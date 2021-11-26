@@ -27,14 +27,14 @@ To pick the right instance type, there are a few considerations.
 
 In this year's datathon, we choose AWS's `g4dn.12xlarge` instance that has 4* NVIDIA T4 GPUs, 48 vCPUs and 196GB system memory. `g4dn.12xlarge` also comes with 900 GB NVMe SSD storage that can be mounted. Take note that this NVMe SSD storage will be deleted when the instance is stopped, so don't keep any data (except for temporary ones) inside unless the instance will be kept running until the end of datathon. For teams who are not using GPU, we choose `m5.8xlarge` instances.
 
-<u>*Launching the first instance (example of GPU instance)*</u>
+<u><i>Launching the first instance (example of GPU instance)</i></u>
 
 1. Search for "**Deep Learning AMI (Ubuntu 18.04) Version 52.0**" AMI, which has all the mainstream deep learning environment set up
 2. Choose the instance type `g4dn.12xlarge`
 3. Configure the storage needed, increase the root volume to 1000 GB if budget allows (default is 110 GB which is almost full as the environment already takes up around 100 GB)
 4. Configure one security group with port 22 open in the inbound rules (either use the default security group or create a new one)
 
-<u>*Setting up the environment*</u>
+<u><i>Setting up the environment</i></u>
 
 1. `sudo apt update`
 2. Install Jupyter Lab:`source activate python3 && pip install jupyterlab`
@@ -43,21 +43,21 @@ In this year's datathon, we choose AWS's `g4dn.12xlarge` instance that has 4* NV
 5. Test to make sure Jupyter Lab, Python kernels and R kernel are working properly with port forwarding, and GPU can be properly seen by your deep learning library.
 6. Download the `mimic-cxr-jpg` dataset directly to the machine
 
-<u>*After S3 is set up*</u>
+<u><i>After S3 is set up</i></u>
 
 1. Create an IAM role with `AmazonS3ReadOnlyAccess` and `AmazonSSMManagedInstanceCore` and associate to the EC2 in the console
 2. Test to make sure the EC2 can see and download file from S3
 
-*<u>After RDS is set up</u>*
+<u><i>After RDS is set up</i></u>
 
 1. Create Python and R example notebooks to show how to connect to the RDS
 
-*<u>Backup the instance</u>*
+<u><i>Backup the instance</i></u>
 
 1. Create an image from the EC2
    1. the size of the EBS volume can be increased when you launch new instance from it
 
-*<u>Launching more instances</u>*
+<u><i>Launching more instances</i></u>
 
 1. Use Python AWS SDK to create instances and private keys in batch
 2. Associate the IAM role to all the EC2 in the console
@@ -69,20 +69,20 @@ In this year's datathon, we choose AWS's `g4dn.12xlarge` instance that has 4* NV
 
 We build our EHR databases on RDS for every team to query from. This year, we provide `MIMIC-IV` with ED and CXR, as well as `eICU`.
 
-*<u>Preparing a backup of the databases</u>*
+<u><i>Preparing a backup of the databases</i></u>
 
 1. Login to our own machine that has the EHR databases installed
 2. `pg_dump` each database into a single .sql file
    1. The `eicu` database in our server does not have views, a separate dump from `eicu-views.pgsql` needs to be imported
 
-*<u>Create an EC2</u>*
+<u><i>Create an EC2</i></u>
 
 1. Make sure the EC2 has enough space (e.g. 512GB) in the root volume
 2. Install `postgresql & postgresql-client` on the EC2 to enable `psql` command ([example](https://computingforgeeks.com/install-postgresql-12-on-ubuntu/) for PostgreSQL 12)
 3. Make sure port 22 are open in the inbound rules of the security group to allow SSH access
 4. `scp` the .sql backup files from your own machine to the EC2
 
-*<u>Create an RDS</u>*
+<u><i>Create an RDS</i></u>
 
 1. Launch an RDS instance (start with a low-end instance to save cost, upgrade to a better instance a few days before datathon starts)
    1. Set the maintenance window to low-usage hours (like 4AM)
@@ -90,11 +90,11 @@ We build our EHR databases on RDS for every team to query from. This year, we pr
 3. Connect to the RDS via local `pgadmin4` by SSH tunneling using the EC2
 4. Create the empty databases in the RDS (e.g. mimiciv, eicu)
 
-*<u>Importing the database backup from EC2 (based on official [guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.EC2.html) from AWS)</u>*
+<u><i>Importing the database backup from EC2 (based on official <aref src="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.EC2.html"> guide </aref> from AWS)</i></u>
 
 1. Import the database with `psql` from the EC2
 
-<u>*Roles management*</u>
+<u><i>Roles management</i></u>
 
 1. Set up the respective `team` and `teammaster` roles, grant necessary priviledges
 2. Create individual team roles with different passwords, in order for them to create tables in their own schemas
