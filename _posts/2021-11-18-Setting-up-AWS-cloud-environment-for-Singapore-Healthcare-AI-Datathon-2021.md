@@ -90,7 +90,7 @@ We build our EHR databases on RDS for every team to query from. This year, we pr
 3. Connect to the RDS via local `pgadmin4` by SSH tunneling using the EC2
 4. Create the empty databases in the RDS (e.g. mimiciv, eicu)
 
-<u><i>Importing the database backup from EC2 (based on official <aref src="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.EC2.html"> guide </aref> from AWS)</i></u>
+<u><i>Importing the database backup from EC2 (based on official <a href="https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/PostgreSQL.Procedural.Importing.EC2.html"> guide </a> from AWS)</i></u>
 
 1. Import the database with `psql` from the EC2
 
