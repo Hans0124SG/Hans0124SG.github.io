@@ -63,7 +63,7 @@ In this year's datathon, we choose AWS's `g4dn.12xlarge` instance that has 4* NV
 2. Associate the IAM role to all the EC2 in the console
 3. Take note of the IP address and the private keys for each EC2 for distribution
 
-
+<br>
 
 ### Relational Database Service (RDS)
 
@@ -100,7 +100,7 @@ We build our EHR databases on RDS for every team to query from. This year, we pr
 2. Create individual team roles with different passwords, in order for them to create tables in their own schemas
 3. Let team login via pgadmin4 using their own username and password
 
-
+<br>
 
 ### Simple Storage Service (S3)
 
